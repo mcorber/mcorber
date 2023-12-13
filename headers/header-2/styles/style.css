@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-image: url(../assets/imgs/group.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-color: #515DEF;
+    margin: 0 auto;
+    max-width: 1920px;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 4rem;
+    padding-left: 16rem;
+}
+
+header .barra-nav{
+    width: 90%;
+    
+    padding-top: 4.6rem;
+    padding-bottom: 4.7rem;
+    display: grid;
+    grid-template-columns: 9.2rem 51.2rem auto;
+    gap: 14.8rem;
+    align-items: center;
+}
+
+header .barra-nav .logo{
+    width: 9.2rem;
+    height: 5.4rem;
+    background-image: url('../assets/icons/logo.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header .barra-nav nav{
+    width: 51.2rem;
+}
+
+header .barra-nav nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    gap: 5.6rem;
+}
+
+header .barra-nav nav ul li{
+    width: 100%;
+}
+
+header .barra-nav nav ul li a{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    font-size: 1.9rem;
+}
+
+header .barra-nav .contact{
+    justify-self: end;
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+    background-color: #515DEF;
+    font-size: 1.8rem;
+}
+main{
+    width: 100%;
+}
+
+main .introduction{
+    display: flex;
+    flex-direction: column;
+    padding-left: 16rem;
+    margin-bottom: 8.1rem;
+    max-width: fit-content;
+}
+
+main .introduction .saludo{
+    color: white;
+    font-size: 2.4rem;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 1.6rem;
+}
+
+main .introduction .info{
+    width: 86.4rem;
+    line-height: 8rem;
+    font-size: 6.4rem;
+    font-weight: 700;
+    margin-bottom: 3.2rem;
+    color: white;
+}
+
+main .introduction .description{
+    width: 78.4rem;
+    color: white;
+    font-size: 2.4rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 4rem;
+    margin-bottom: 5.4rem;
+}
+
+main .introduction .colaborate{
+    text-decoration: none;
+    width: 30rem;
+    display: flex;
+    align-items: center;
+    padding: 1.6rem;
+    gap: 0.8rem;
+    background-color: white;
+    color: black;
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 4rem;
+}
+
+main .introduction .colaborate span{
+    width: 4.8rem;
+    height: 4.8rem;
+    background-image: url('../assets/icons/arrow.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+main .services{
+    width: 70%;
+    padding-left: 16rem;
+    padding-right: 4.8rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    display: flex;
+    gap: 8rem;
+    background-color: white;
+}
+
+main .services article{
+    width: 32.8rem;
+    height: 18rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+main .services article span{
+    margin-bottom: 2.4rem;
+    width: 6.4rem;
+    height: 6.4rem;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+main .services article:first-child span{
+    background-image: url('../assets/icons/web_design.svg');
+}
+
+main .services article:nth-child(2) span{
+    background-image: url('../assets/icons/social_media.svg');
+}
+
+main .services article:last-child span{
+    background-image: url('../assets/icons/design.svg');
+}
+
+main .services article .title{
+    color: black;
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal;
+}
+
+main .services article .description{
+    color: #909090;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
+
+

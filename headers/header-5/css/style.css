@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.page {
+  width: 100%;
+  padding-left: 16rem;
+  padding-right: 15rem;
+  margin: 0 auto;
+  max-width: 1920px;
+}
+
+header {
+  width: 100%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .nav {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .nav nav {
+  width: 55%;
+}
+header .nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+header .nav ul a {
+  font-size: 1.7rem;
+  color: #949494;
+  font-weight: 400;
+  text-decoration: none;
+}
+header .nav ul a.active {
+  color: #F38160;
+  position: relative;
+}
+header .nav ul a.active::after {
+  content: "";
+  width: 80%;
+  height: 2px;
+  position: absolute;
+  left: 10%;
+  bottom: -10px;
+  background-color: #F38160;
+}
+header .nav .sign__container {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .nav .sign__container .shop {
+  background-image: url("../assets/icons/shop.svg");
+  width: 2.7rem;
+  height: 2.7rem;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+header .nav .sign__container .shop::after {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  top: -4px;
+  right: -4px;
+  background-color: #F38160;
+  position: absolute;
+}
+header .nav .sign__container .sign-in {
+  font-size: 1.7rem;
+  color: #949494;
+  font-weight: 400;
+  text-decoration: none;
+  color: #F38160;
+  text-decoration: underline;
+}
+header .nav .sign__container .sign-up {
+  padding: 1.6rem 4.5rem;
+  background-color: #F38160;
+  font-size: 1.7rem;
+  color: #949494;
+  font-weight: 400;
+  text-decoration: none;
+  border-radius: 16px;
+  color: white;
+}
+
+main {
+  width: 100%;
+}
+
+.hero {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.hero .hero__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 45%;
+}
+.hero .hero__info h1 {
+  min-width: 75rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 7rem;
+  line-height: normal;
+  color: #403C39;
+  margin-bottom: 1.6rem;
+}
+.hero .hero__info h1 span {
+  color: #F38160;
+}
+.hero .hero__info .description {
+  font-size: 1.7rem;
+  color: #949494;
+  font-weight: 400;
+  text-decoration: none;
+  width: 70%;
+  min-width: 65rem;
+  font-size: 2.4rem;
+  margin-bottom: 4.6rem;
+}
+.hero .hero__info form {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin-bottom: 4rem;
+}
+.hero .hero__info form input {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  height: 6rem;
+  width: 75%;
+  border: none;
+  background-color: rgba(208, 208, 210, 0.2509803922);
+  padding-left: 3.2rem;
+}
+.hero .hero__info form input::-moz-placeholder {
+  font-size: 1.7rem;
+  color: #949494;
+  font-weight: 400;
+  text-decoration: none;
+}
+.hero .hero__info form input::placeholder {
+  font-size: 1.7rem;
+  color: #949494;
+  font-weight: 400;
+  text-decoration: none;
+}
+.hero .hero__info form span {
+  width: 6rem;
+  height: 6rem;
+  background-color: #F38160;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  display: inline-block;
+  background-image: url("../assets/icons/buscar.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hero .hero__info .hero__info__items {
+  width: 65%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: start;
+  justify-content: start;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  row-gap: 1.6rem;
+}
+.hero .hero__info .hero__info__items div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.hero .hero__info .hero__info__items div span {
+  width: 2.4rem;
+  height: 2.4rem;
+  background-repeat: no-repeat;
+  background-image: url("../assets/icons/check.svg");
+}
+.hero .hero__info .hero__info__items p {
+  font-size: 1.7rem;
+  color: #949494;
+  font-weight: 400;
+  text-decoration: none;
+}
+.hero .hero__image {
+  width: 50%;
+  display: inline-block;
+  background-image: url("../assets/imgs/rectangle-2.svg"), url("../assets/imgs/rectangle-1.svg");
+  background-position: center left;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.products-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: start;
+  justify-content: space-between;
+  padding: 3.2rem;
+}
+.products-container article {
+  width: 18%;
+  height: 100%;
+}
+.products-container article span {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-bottom: 24px;
+}
+.products-container article h4 {
+  color: #403C39;
+  font-weight: 500;
+  font-size: 2.4rem;
+  margin-bottom: 8px;
+}
+.products-container article p {
+  font-size: 1.7rem;
+  color: #949494;
+  font-weight: 400;
+  text-decoration: none;
+}
+.products-container .dairy {
+  background-image: url("../assets/imgs/dairy.png");
+}
+.products-container .fruit {
+  background-image: url("../assets/imgs/fruits.png");
+}
+.products-container .spices {
+  background-image: url("../assets/imgs/condiments.png");
+}
+.products-container .honey {
+  background-image: url("../assets/imgs/baby-food.png");
+}
+.products-container .flour {
+  background-image: url("../assets/imgs/pasta.png");
+}/*# sourceMappingURL=style.css.map */

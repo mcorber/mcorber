@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --gris : #909090;
+    --azul : #7EDAD2;
+    --negro_oscuro : #424241;
+}
+html{
+    font-size: 62.5%;
+
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    
+    background-image: url('../assets/imgs/hero.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+    
+    padding-left: 16rem;
+    padding-right: 16rem;
+    margin: 0 auto;
+    max-width: 1920px;
+}
+header{
+    padding-top: 3.3rem;
+    padding-bottom: 3.3rem;
+    
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+header img{
+    margin-bottom: 6rem;
+}
+header nav{
+    width: 38%;
+}
+
+header nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li{
+    width: 100%;
+}
+
+header nav ul li a{
+    display: block;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+}
+
+.smart_people{
+    margin-bottom: 5.8rem;
+}
+
+.smart_people h1{
+    width: 69rem;
+    color: var(--negro_oscuro);
+    font-size: 11rem;
+    font-weight: 400;
+    line-height: 12rem;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.smart_people h1 span{
+    color: var(--azul);
+}
+
+.smart_people p{
+    
+    max-width: 60rem;
+    margin-top: 1rem;
+    color: var(--gris);
+    font-family: 'Poppins', sans-serif;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 4rem;
+}
+
+.smart_people a{
+    width: 18rem;
+    padding: 2rem 2.5rem;
+    display: inline-block;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    background-color: var(--azul);
+    color: white;
+}
+
+.achievements{
+    display: flex;
+    gap: 5rem;
+    margin-bottom: 6rem;
+    max-width: 60rem;
+}
+
+.achievements div{
+    display: block;
+    text-align: center;
+}
+
+.achievements div p:first-child{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 4.8rem;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--negro_oscuro);
+}
+
+.achievements div p:not(:first-child){
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--gris);
+}
+
+.services{
+    display: flex;
+    gap: 3.2rem;
+    margin-bottom: 4rem;
+}
+
+.services article{
+    background-color: white;
+    width: 37.6rem;
+    height: auto;
+    padding: 3.2rem;
+    display: flex;
+    gap: 0.8rem;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-items: flex-start;
+}
+
+.services article .title{
+    font-family: 'Poppins', sans-serif;
+    color: var(--negro_oscuro);
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.services article .description{
+    font-family: 'Poppins', sans-serif;
+    color: var(--gris);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.business-plan span{
+    width: 6.4rem;
+    height: 6.4rem;
+    background-image: url('../assets/icons/checklist.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.financial-planning span{
+    width: 6.4rem;
+    height: 6.4rem;
+    background-image: url('../assets/icons/money_bag.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.digital-marketing span{
+    width: 6.4rem;
+    height: 6.4rem;
+    background-image: url('../assets/icons/announcement.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.market-analysis span{
+    width: 6.4rem;
+    height: 6.4rem;
+    background-image: url('../assets/icons/business_presentation.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}

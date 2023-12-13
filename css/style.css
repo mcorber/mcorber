@@ -1,0 +1,266 @@
+/* Media Query Variables */
+/* Color Variables */
+/* Font Variables */
+/* Reset Styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Root Font Size */
+html {
+  font-size: 62.5%;
+}
+
+/* Button Styles */
+.button {
+  padding: 16px;
+  font-size: 1.8rem;
+  background-color: #424241;
+  color: #FAF8F5;
+  text-decoration: none;
+}
+
+/* Body Styles */
+body {
+  overflow-y: hidden;
+}
+
+/* Page Background */
+.page::after {
+  content: "";
+  background-color: #DEDAD5;
+  width: 50%;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -20;
+  margin: 0 auto;
+  max-width: 1920px;
+}
+
+/* Page Padding */
+.page {
+  padding-left: 16rem;
+  padding-right: 15rem;
+}
+
+/* Main Container */
+main {
+  width: 100%;
+}
+
+/* Hero Section */
+.hero {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+/* Hero Introduction Styles */
+.hero__introduction {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 49%;
+  padding-left: 10px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero__introduction h1 {
+  z-index: 30;
+  min-width: 780px;
+  width: 795px;
+  font-family: "Playfair Display", serif;
+  font-size: 8rem;
+  line-height: 95px;
+  color: #424241;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+.hero__introduction p {
+  font-size: 2.3rem;
+  line-height: normal;
+  color: #424241;
+  opacity: 0.5;
+  margin-bottom: 50px;
+  min-width: 640px;
+  width: 670px;
+}
+
+/* Hero Introduction Shape */
+.hero__introduction::after {
+  content: "";
+  width: 350px;
+  height: 85px;
+  position: absolute;
+  background-color: #DEDAD5;
+  opacity: 0.25;
+  top: 0;
+  left: 0;
+}
+
+/* Hero Introduction Links Styles */
+.hero__introduction-links {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Hero Images Styles */
+.hero__images {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero__images img {
+  width: 47%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+/* Hero Services Styles */
+.hero__services {
+  right: 30px;
+  top: 450px;
+  position: absolute;
+  padding: 32px;
+  background-color: #FAF8F5;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 25%;
+}
+
+.hero__services h4 {
+  color: #424241;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.hero__services ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding-top: 24px;
+  gap: 40px;
+  width: 100%;
+}
+
+.hero__services li {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.hero__services .number {
+  color: #9E9D9B;
+  font-size: 1.8rem;
+  margin-right: 25px;
+}
+
+.hero__services .product {
+  font-size: 2.4rem;
+  color: #424241;
+  margin-right: auto;
+  font-weight: 400;
+}
+
+.hero__services span {
+  width: 40px;
+  height: 40px;
+  background-image: url("../../assets/icons/arrow.svg");
+  display: inline-block;
+}
+
+/* Horizontal Line in Services */
+.hero__services li:not(:last-child)::after {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #DEDAD5;
+}
+
+/* Experience Section Styles */
+.experience {
+  position: relative;
+  margin-top: 10px;
+  text-align: center;
+  width: 38%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.experience h4 {
+  font-size: 6.4rem;
+  font-weight: 500;
+  color: #424241;
+}
+
+.experience p {
+  width: 40px;
+  color: #9E9D9B;
+  font-size: 1.8rem;
+  line-height: 32px;
+}
+
+/* Experience Shape */
+.experience::after {
+  position: absolute;
+  content: "";
+  width: 400px;
+  height: 160px;
+  background-color: #DEDAD5;
+  opacity: 0.25;
+  right: -290px;
+  bottom: -90px;
+}
+
+/* Header Styles */
+header {
+  margin-bottom: 6rem;
+  width: 100%;
+  padding: 3.3rem 44.5rem 3.3rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #424241;
+  opacity: 0.5;
+}
+
+header li:first-child a {
+  opacity: 1;
+}
+
+/* Navigation Styles */
+nav {
+  width: 58%;
+}/*# sourceMappingURL=style.css.map */
