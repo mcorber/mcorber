@@ -222,13 +222,15 @@ main{
 .nft{
     grid-column: 2/3;
     grid-row: 1/3;
+    height: 75%;
+    align-self: flex-start;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     .nft__info{
         width: 60rem;
-        height: 23rem;
+        height: 240px;
         background-color: $white;
         padding: 3rem;
         margin-bottom: 3rem;
@@ -303,7 +305,7 @@ main{
 .nft>img{
     border-top-right-radius: 50%;
     border-top-left-radius: 50%;
-    width: 50rem;
-    height: 47rem;
+    width: 48rem;
+    height: 48rem;
     object-fit: cover;
 }
