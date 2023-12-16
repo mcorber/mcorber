@@ -1,109 +1,93 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite Sass Base Project</title>
+    <script type="module" src="/main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belgrano&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-
-  <link rel="stylesheet" href="css/style.css">
-
-  <meta name="theme-color" content="#fafafa">
-
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Belgrano&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
-</head>
-
-<body>
-
-  <div class="container">
-    <header>
-      <figure>
-        <img src="./assets/imgs/logo.jpg" alt="">
-      </figure>
-      <nav>
-        <ul>
-          <li><a href="">Market</a></li>
-          <li><a href="">How it works</a></li>
-          <li><a href="">Gallery</a></li>
-          <li><a href="">About</a></li>
+  <body>
+    <div class="page">
+      <header>
+        <figure class="logo">
+          <img src="./assets/img/logo.png" alt="">
+        </figure>
+        <nav>
+          <ul>
+            <li><a href="">Market</a></li>
+            <li><a href="">How it works</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">About</a></li>
+          </ul>
+        </nav>
+  
+        <ul class="login">
+          <a href="" class="sign-up">Sign Up</a>
+          <a href="" class="sign-in">Sign In</a>
         </ul>
-      </nav>
-
-      <ul class="login">
-        <a href="" class="sign-up">Sign Up</a>
-        <a href="" class="sign-in">Sign In</a>
-      </ul>
-    </header>
-
-    <main>
-      <section class="introduction">
-        <h1>The largest NFT market with exceptional items on the bid</h1>
-        <p>Collectible and non-fungible takens in your hands</p>
-
-        <div class="links">
-          <a href="" class="links__explore">Explore</a>
-          <a href="" class="links__learn">Learn more <span></span></a>
-        </div>
-      </section>
-
-      <section class="gallery">
-        <h2>Featured Artwork</h2>
-        <div class="gallery__items">
-          <img src="./assets/imgs/imagen-galeria-1.jpg" alt="">
-          <img src="./assets/imgs/imagen-galeria-2.jpg" alt="">
-        </div>
-      </section>
-
-      <section class="nft">
-        <img src="./assets/imgs/nft.jpg" alt="">
-        <div class="nft__info">
-          <div class="nft__info-person">
-            <img src="./assets/imgs/avatar.jpg" alt="">
-            <div class="nft__info-person_media">
-              <p>@samanthaw</p>
-              <p>Artwork #01</p>
+      </header>
+  
+      <main>
+        <section class="introduction">
+          <h1>The largest NFT market with exceptional items on the bid <span></span></h1>
+          <p>Collectible and non-fungible takens in your hands</p>
+  
+          <div class="links">
+            <a href="" class="links__explore">Explore</a>
+            <a href="" class="links__learn">Learn more <span></span></a>
+          </div>
+        </section>
+  
+        <section class="gallery">
+          <h2>Featured Artwork</h2>
+          <div class="gallery__items">
+            <img src="./assets/img/imagen-galeria-1.jpg" alt="">
+            <img src="./assets/img/imagen-galeria-2.jpg" alt="">
+          </div>
+        </section>
+  
+        <section class="nft">
+          <img src="./assets/img/nft.png" alt="">
+          <div class="nft__info">
+            <div class="nft__info-person">
+              <img src="./assets/img/avatar.png" alt="">
+              <div class="nft__info-person_media">
+                <p>@samanthaw</p>
+                <p>Artwork #01</p>
+              </div>
+              <div class="nft__info-person_price">
+                <p>Current Bild</p>
+                <p>1.00 ETH</p>
+              </div>
             </div>
-            <div class="nft__info-person_price">
-              <p>Current Bild</p>
-              <p>1.00 ETH</p>
+            <div class="nft__links">
+              <a href="" class="bid">Bid Now</a>
+              <a href="" class="view">View Artwork</a>
             </div>
           </div>
-          <div class="nft__links">
-            <a href="" class="bid">Bid Now</a>
-            <a href="" class="view">View Artwork</a>
+          <div class="services">
+            <div class="services__item">
+              <p>50K+</p>
+              <p>Artwork</p>
+            </div>
+            <div class="services__item">
+              <p>30k+</p>
+              <p>Artist</p>
+            </div>
+            <div class="services__item">
+              <p>20k+</p>
+              <p>Auction</p>
+            </div>
           </div>
-        </div>
-        <div class="services">
-          <div class="services__item">
-            <p>50K+</p>
-            <p>Artwork</p>
-          </div>
-          <div class="services__item">
-            <p>30k+</p>
-            <p>Artist</p>
-          </div>
-          <div class="services__item">
-            <p>20k+</p>
-            <p>Auction</p>
-          </div>
-        </div>
-      </section>
-    </main>
-  </div>
-
-</body>
-
+        </section>
+      </main>
+    </div>
+  
+    
+  </body>
 </html>

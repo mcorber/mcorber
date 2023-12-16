@@ -1,0 +1,206 @@
+main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 100px;
+    
+}
+.introduction{
+    padding-top: 28px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 100%;
+    justify-self: flex-start;
+    text-align: start;
+    margin-bottom: 65px;
+    h1{
+        width: 95%;
+        min-width: 600px;
+        font-family: $belgrano;
+        font-size: 4.9rem;
+        font-weight: 400;
+        line-height: 65px;
+        color: $black;
+        position: relative;
+        margin-bottom: 10px;
+        span{
+            width: 200px;
+            height: 95px;
+            display: inline-block;
+            position: absolute;
+            background-image: url('../../assets/img/Vector.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            top: -4px;
+            left: 80px;
+        }
+    }
+    p{
+        font-size: 2.2rem;
+        color: $gray;
+        font-weight: 400;
+        position: relative;
+        margin-bottom: 35px;
+    }
+    p::after{
+        position: absolute;
+        content: "";
+        width:80px ;
+        height: 3px;
+        background-color: $red;
+        bottom: 4px;
+        left: 0;
+    }
+   .links{
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .links__explore{
+            padding: 10px 65px;
+            background-color: $red;
+            color: $white;
+            font-size: 1.7rem;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .links__learn{
+            display: flex;
+            align-items: center;
+            font-size: 1.7rem;
+            font-weight: 400;
+            color: $black;
+            gap: 7px;
+            span{
+                width: 38px;
+                height: 38px;
+                display: inline-block;
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-image: url('../../assets/icons/Arrow.svg');
+            }
+        }
+   }
+}
+
+.gallery{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 100%;
+    height: 100%;
+    h2{
+        font-family: $belgrano;
+        font-size: 3rem;
+        font-weight: 400;
+        color: $black;
+        margin-bottom: 25px;
+    }
+    .gallery__items{
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        img{
+            width: 49%;
+            height: 55%;
+            object-fit: cover;
+        }
+    }
+}
+.nft{
+    grid-column: 2/3;
+    grid-row: 1/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &>img{
+        width: 90%;
+        object-fit: contain;
+    }
+}
+.nft__info{
+    width: 100%;
+    background-color: $white;
+    padding: 27px;
+    margin-bottom: 40px;
+}
+.nft__info-person{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: 40px;
+    &>img{
+        margin-right: 15px;
+    }
+    .nft__info-person_media{
+        margin-right: auto;
+    }
+    p:first-child{
+        color: $gray;
+        font-size: 1.7rem;
+        font-weight: 400;
+        margin-bottom: 4px;
+    }
+    p:last-child{
+        color: $black;
+        font-size: 2.2rem;
+        font-weight: 600;
+    }
+}
+.nft__info-person::after{
+    position: absolute;
+    content: "";
+    width: 420px;
+    height: 2px;
+    bottom: -15px;
+    left:0;
+    right: 0;
+    margin: 0 auto;
+    background-color: $black;
+}
+
+.nft__links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .bid{
+        padding: 10px 75px;
+        background-color: $red;
+        color: $white;
+        font-size: 1.7rem;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    .view{
+        font-weight: 600;
+        font-size: 1.7rem;
+        color: $red;
+        text-decoration: none;
+        padding: 10px 30px;
+    }
+}
+
+.services{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    .services__item{
+        display: flex;
+        align-items: center;
+    }
+    p:first-child{
+        font-size: 3rem;
+        color: $red;
+        font-weight: 600;
+        margin-right: 8px;
+    }
+    p:last-child{
+        font-size: 1.8rem;
+        color: $white;
+        font-weight: 400;
+    }
+}

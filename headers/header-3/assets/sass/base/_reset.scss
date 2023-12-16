@@ -1,0 +1,11 @@
+@import "./typography";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $poppins;
+}
+
+html{
+  font-size: 62.5%;
+}

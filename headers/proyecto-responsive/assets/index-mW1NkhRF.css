@@ -136,7 +136,10 @@ header .get-started-header:hover {
 		font-size: 1.8rem
 	}
 }
-
+.page{
+	margin: 0 auto;
+	max-width: 1440px;
+}
 .page:not(footer) {
 	background-color: #fff
 }
@@ -380,7 +383,7 @@ main .introduction .get-started-main:hover {
 
 @media screen and (min-width: 1440px) {
     header{
-        margin-bottom: 60px;
+        margin-bottom: 69px;
     }
 	main {
 		padding: 0 160px;
@@ -442,29 +445,31 @@ main .introduction .get-started-main:hover {
 	}
 	.numbers {
 		
-		align-self: flex-start;
+		align-self: flex-end;
 		
 		border-radius: 160px;
 		position: relative;
 		grid-column: 2/3;
+		justify-self: flex-end;
 		background: none;
-        width: 100%;
+        width: 105%;
         height: 100%;
 		margin-bottom: 0;
         z-index: 1000;;
 	}
 
     .numbers .caja-1{
-        top: 35px;
-        right: 230px;
+        top: -70px;
+        right: 130px;
     }
 
     .numbers .caja-2{
-        left: 30%;
+        left: 20%;
+		bottom: 40px;
     }
 
     .numbers>img{
-        height: 130%;
+        height: 100%;
         display: block;
         object-fit: cover;
         position: absolute;

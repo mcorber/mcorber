@@ -11,16 +11,16 @@ html {
 
 .page {
   width: 100%;
-  padding-left: 16rem;
-  padding-right: 15rem;
+  padding-left: 130px;
+  padding-right: 130px;
   margin: 0 auto;
-  max-width: 1920px;
+  max-width: 1440px;
 }
 
 header {
   width: 100%;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 25px;
+  padding-bottom: 25px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -35,12 +35,13 @@ header .nav nav {
   width: 55%;
 }
 header .nav ul {
+  width: 100%;
   display: flex;
   list-style: none;
   justify-content: space-between;
 }
 header .nav ul a {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   color: #949494;
   font-weight: 400;
   text-decoration: none;
@@ -66,8 +67,8 @@ header .nav .sign__container {
 }
 header .nav .sign__container .shop {
   background-image: url("../assets/icons/shop.svg");
-  width: 2.7rem;
-  height: 2.7rem;
+  width: 25px;
+  height: 25px;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -84,7 +85,7 @@ header .nav .sign__container .shop::after {
   position: absolute;
 }
 header .nav .sign__container .sign-in {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   color: #949494;
   font-weight: 400;
   text-decoration: none;
@@ -92,9 +93,9 @@ header .nav .sign__container .sign-in {
   text-decoration: underline;
 }
 header .nav .sign__container .sign-up {
-  padding: 1.6rem 4.5rem;
+  padding: 13px 36px;
   background-color: #F38160;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   color: #949494;
   font-weight: 400;
   text-decoration: none;
@@ -118,11 +119,11 @@ main {
   width: 45%;
 }
 .hero .hero__info h1 {
-  min-width: 75rem;
+  min-width: 600px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 7rem;
-  line-height: normal;
+  font-size: 6rem;
+  line-height: 70px;
   color: #403C39;
   margin-bottom: 1.6rem;
 }
@@ -130,14 +131,14 @@ main {
   color: #F38160;
 }
 .hero .hero__info .description {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   color: #949494;
   font-weight: 400;
   text-decoration: none;
-  width: 70%;
-  min-width: 65rem;
-  font-size: 2.4rem;
-  margin-bottom: 4.6rem;
+  width: 84%;
+  min-width: 420px;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
 }
 .hero .hero__info form {
   display: flex;
@@ -148,27 +149,27 @@ main {
 .hero .hero__info form input {
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
-  height: 6rem;
+  height: 40px;
   width: 75%;
   border: none;
   background-color: rgba(208, 208, 210, 0.2509803922);
   padding-left: 3.2rem;
 }
 .hero .hero__info form input::-moz-placeholder {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   color: #949494;
   font-weight: 400;
   text-decoration: none;
 }
 .hero .hero__info form input::placeholder {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   color: #949494;
   font-weight: 400;
   text-decoration: none;
 }
 .hero .hero__info form span {
   width: 6rem;
-  height: 6rem;
+  height: 40px;
   background-color: #F38160;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -178,7 +179,7 @@ main {
   background-position: center;
 }
 .hero .hero__info .hero__info__items {
-  width: 65%;
+  width: 75%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: start;
@@ -193,19 +194,21 @@ main {
   gap: 1rem;
 }
 .hero .hero__info .hero__info__items div span {
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 22px;
+  height: 22px;
+  background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
   background-image: url("../assets/icons/check.svg");
 }
 .hero .hero__info .hero__info__items p {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   color: #949494;
   font-weight: 400;
   text-decoration: none;
 }
 .hero .hero__image {
-  width: 50%;
+  width: 45%;
   display: inline-block;
   background-image: url("../assets/imgs/rectangle-2.svg"), url("../assets/imgs/rectangle-1.svg");
   background-position: center left;
@@ -220,32 +223,33 @@ main {
   align-items: center;
   text-align: start;
   justify-content: space-between;
-  padding: 3.2rem;
+  padding: 25px;
 }
 .products-container article {
-  width: 18%;
+  width: 19%;
   height: 100%;
 }
 .products-container article span {
   display: inline-block;
-  width: 90px;
-  height: 90px;
+  width: 60px;
+  height: 60px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  margin-bottom: 24px;
+  margin-bottom: 18px;
 }
 .products-container article h4 {
   color: #403C39;
   font-weight: 500;
-  font-size: 2.4rem;
+  font-size: 1.9rem;
   margin-bottom: 8px;
 }
 .products-container article p {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   color: #949494;
   font-weight: 400;
   text-decoration: none;
+  font-size: 1.4rem;
 }
 .products-container .dairy {
   background-image: url("../assets/imgs/dairy.png");
