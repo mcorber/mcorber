@@ -1,0 +1,183 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box
+}
+html{
+	font-size:62.5%;
+	font-family:Poppins,sans-serif
+}
+header{
+	width:100%;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	padding:33px 0;
+	margin-bottom:70px
+}
+nav{
+	width:35%;
+	min-width:max-content
+}
+nav ul{
+	width:100%;
+	display:flex;
+	align-items:center;
+	list-style:none
+}
+nav a{
+	text-decoration:none;
+	font-size:1.8rem;
+	font-weight:400;
+	color:#424241;
+	display:block;
+	padding:10px 30px
+}
+nav a:hover{
+	text-decoration:underline
+}
+.page{
+	width:100%;
+	height:auto;
+	max-width:1440px;
+	margin:0 auto;
+	padding:0 130px 0 140px;
+	background-color:#fafafa;
+	position:relative;
+	z-index:1
+}
+.page .mujer{
+	position:absolute;
+	z-index:-10;
+	width:55%;
+	height:88%;
+	object-fit:cover;
+	top:0;
+	right:0
+}
+main{
+	width:100%
+}
+main .hero{
+	width:56%;
+	display:flex;
+	flex-direction:column;
+	align-items:flex-start;
+	margin-bottom:45px
+}
+main .hero h1{
+	font-family:Bebas Neue,sans-serif;
+	font-size:7.7rem;
+	font-style:normal;
+	font-weight:400;
+	line-height:105px;
+	color:#424241;
+	min-width:650px;
+	margin-bottom:9px
+}
+main .hero h1 span{
+	color:#7edad2
+}
+main .hero>p{
+	color:#909090;
+	font-size:2rem;
+	line-height:34px;
+	margin-bottom:37px;
+	width:85%;
+	min-width:350px
+}
+main .hero .button{
+	display:inline-block;
+	padding:16.5px 35px;
+	background-color:#7edad2;
+	color:#fafafa;
+	font-size:1.8rem;
+	font-weight:400;
+	text-decoration:none;
+	border-radius:10px;
+	box-shadow:0 25px 50px #06168d0a;
+	margin-bottom:50px
+}
+main .hero .button:hover{
+	transform:scale(1.1);
+	background-color:#153a7e;
+	transition:all .5s linear
+}
+main .hero__experience{
+	width:75%;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	text-align:center
+}
+main .hero__experience .hero__experience-item{
+	text-align:center
+}
+main .hero__experience .hero__experience-item h4{
+	font-family:Bebas Neue,sans-serif;
+	font-size:4.6rem;
+	font-weight:400;
+	color:#424241
+}
+main .hero__experience .hero__experience-item p{
+	font-size:1.8rem;
+	font-weight:400;
+	color:#909090
+}
+.services{
+	width:100%;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	margin-bottom:30px
+}
+.services article{
+	width:24%;
+	height:100%;
+	padding:32px;
+	background-color:#fafafa;
+	text-align:start
+}
+.services article span{
+	width:50px;
+	height:50px;
+	display:inline-block;
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+	margin-bottom:7px
+}
+.services article h4{
+	font-size:2rem;
+	color:#424241;
+	font-weight:500;
+	margin-bottom:7px
+}
+.services article p{
+	font-size:1.5rem;
+	color:#909090
+}
+.services article:hover{
+	background-color:#7edad2;
+	transition:all 1s linear;
+	cursor:pointer
+}
+.services .business{
+	background-image:url(./checklist-nN4p85LQ.svg)
+}
+.services .financial{
+	background-image:url(./money_bag-Phq1egGg.svg)
+}
+.services .marketing{
+	background-image:url(./announcement-Zru4hPjn.svg)
+}
+.services .analysis{
+	background-image:url(./business_presentation-3UPM1Rxs.svg)
+}
+body{
+	overflow-x:hidden;
+	font-size:16px
+}
+img{
+	max-width:100%
+}

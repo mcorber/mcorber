@@ -1,0 +1,307 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+	font-family:Poppins,sans-serif
+}
+html{
+	font-size:62.5%
+}
+header{
+	display:flex;
+	align-items:center;
+	width:100%;
+	padding:30px 0;
+	margin-bottom:55px
+}
+header .logo{
+	margin-right:110px
+}
+header nav{
+	width:35%
+}
+header nav ul{
+	width:100%;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	list-style:none
+}
+header nav ul a{
+	font-size:1.6rem;
+	color:#2e2f38;
+	font-weight:400;
+	text-decoration:none
+}
+header nav ul a:hover{
+	text-decoration:underline
+}
+header .login{
+	margin-left:auto;
+	display:flex;
+	align-items:center;
+	width:20%;
+	justify-content:space-between
+}
+header .login a{
+	text-decoration:none
+}
+header .login .sign-up{
+	font-size:1.7rem;
+	font-weight:600;
+	color:#fff
+}
+header .login .sign-in{
+	padding:10px 35px;
+	background-color:#fa504d;
+	color:#fff;
+	font-size:1.7rem;
+	font-weight:600
+}
+body{
+	overflow-y:hidden
+}
+.page{
+	padding:0 130px;
+	max-width:1440px;
+	margin:0 auto;
+	position:relative
+}
+.page:after{
+	content:"";
+	background-color:#2e2f38;
+	width:44%;
+	height:100vh;
+	position:absolute;
+	right:0;
+	top:0;
+	bottom:0;
+	z-index:-100;
+	overflow-y:hidden
+}
+.page:before{
+	margin:0;
+	z-index:1;
+	content:"Artzie.";
+	color:#fff;
+	position:absolute;
+	top:330px;
+	right:-260px;
+	opacity:.05;
+	font-family:Belgrano,serif;
+	font-size:24rem;
+	font-weight:400;
+	transform:rotate(90deg)
+}
+main{
+	width:100%;
+	display:grid;
+	grid-template-columns:1.2fr 1fr;
+	grid-template-rows:1fr 1fr;
+	column-gap:100px
+}
+.introduction{
+	padding-top:28px;
+	grid-column:1/2;
+	grid-row:1/2;
+	width:100%;
+	justify-self:flex-start;
+	text-align:start;
+	margin-bottom:65px
+}
+.introduction h1{
+	width:95%;
+	min-width:600px;
+	font-family:Belgrano,serif;
+	font-size:3.9rem;
+	font-weight:400;
+	line-height:65px;
+	color:#2e2f38;
+	position:relative;
+	margin-bottom:10px
+}
+.introduction h1 span{
+	width:200px;
+	height:95px;
+	display:inline-block;
+	position:absolute;
+	background-image:url("data:image/svg+xml,%3csvg%20width='279'%20height='97'%20viewBox='0%200%20279%2097'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M27.3319%206.85769C108.521%20-2.57397%20277%20-4.76945%20277%2062.6831C277%20111.243%2012.2295%20101.797%202.93432%2056.1828C-1.76433%2033.1249%205.37409%206.85768%20167.211%206.85771'%20stroke='%23FA504D'%20stroke-width='4'/%3e%3c/svg%3e");
+	background-repeat:no-repeat;
+	background-size:contain;
+	top:-4px;
+	left:80px
+}
+.introduction p{
+	font-size:1.9rem;
+	color:#8e8e8e;
+	font-weight:400;
+	position:relative;
+	margin-bottom:35px
+}
+.introduction p:after{
+	position:absolute;
+	content:"";
+	width:80px;
+	height:3px;
+	background-color:#fa504d;
+	bottom:4px;
+	left:0
+}
+.introduction .links{
+	width:70%;
+	display:flex;
+	justify-content:space-between;
+	align-items:center
+}
+.introduction .links .links__explore{
+	padding:10px 65px;
+	background-color:#fa504d;
+	color:#fff;
+	font-size:1.5rem;
+	text-decoration:none;
+	font-weight:600
+}
+.introduction .links .links__learn{
+	display:flex;
+	align-items:center;
+	font-size:1.5rem;
+	font-weight:400;
+	color:#2e2f38;
+	gap:7px
+}
+.introduction .links .links__learn span{
+	width:38px;
+	height:38px;
+	display:inline-block;
+	background-position:center;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image:url("data:image/svg+xml,%3csvg%20width='40'%20height='40'%20viewBox='0%200%2040%2040'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.75004%2019.3548C8.75004%2019.0126%208.88173%2018.6844%209.11616%2018.4424C9.35058%2018.2004%209.66852%2018.0645%2010%2018.0645L26.9875%2018.0645L25.3625%2016.4C25.1272%2016.157%2024.9949%2015.8274%2024.9949%2015.4838C24.9949%2015.1402%2025.1272%2014.8107%2025.3625%2014.5677C25.5979%2014.3247%2025.9172%2014.1882%2026.25%2014.1882C26.5829%2014.1882%2026.9022%2014.3247%2027.1375%2014.5677L30.8875%2018.4387C31.061%2018.6201%2031.1785%2018.8505%2031.2252%2019.1008C31.2719%2019.3511%2031.2458%2019.6101%2031.15%2019.8451C31.0563%2020.0808%2030.897%2020.2825%2030.6924%2020.4248C30.4877%2020.5672%2030.2468%2020.6438%2030%2020.6451L10%2020.6451C9.66852%2020.6451%209.35058%2020.5092%209.11616%2020.2672C8.88173%2020.0252%208.75004%2019.697%208.75004%2019.3548Z'%20fill='%232E2F38'/%3e%3cpath%20d='M25%2023.2258C24.9991%2023.0559%2025.0306%2022.8876%2025.0928%2022.7304C25.155%2022.5732%2025.2467%2022.4302%2025.3625%2022.3096L29.1125%2018.4387C29.3479%2018.1957%2029.6671%2018.0592%2030%2018.0592C30.1648%2018.0592%2030.328%2018.0927%2030.4803%2018.1578C30.6326%2018.2229%2030.771%2018.3184%2030.8875%2018.4387C31.0041%2018.559%2031.0965%2018.7018%2031.1596%2018.859C31.2227%2019.0162%2031.2551%2019.1846%2031.2551%2019.3548C31.2551%2019.6984%2031.1229%2020.0279%2030.8875%2020.2709L27.1375%2024.1419C27.0213%2024.2628%2026.8831%2024.3588%2026.7307%2024.4243C26.5784%2024.4898%2026.415%2024.5236%2026.25%2024.5236C26.085%2024.5236%2025.9216%2024.4898%2025.7693%2024.4243C25.617%2024.3588%2025.4787%2024.2628%2025.3625%2024.1419C25.2467%2024.0213%2025.155%2023.8783%2025.0928%2023.7211C25.0306%2023.5639%2024.9991%2023.3956%2025%2023.2258Z'%20fill='%232E2F38'/%3e%3c/svg%3e")
+}
+.gallery{
+	grid-column:1/2;
+	grid-row:2/3;
+	width:100%;
+	height:100%
+}
+.gallery h2{
+	font-family:Belgrano,serif;
+	font-size:2.5rem;
+	font-weight:400;
+	color:#2e2f38;
+	margin-bottom:25px
+}
+.gallery .gallery__items{
+	height:100%;
+	display:flex;
+	align-items:flex-start;
+	justify-content:space-between
+}
+.gallery .gallery__items img{
+	width:49%;
+	height:55%;
+	object-fit:cover
+}
+.nft{
+	grid-column:2/3;
+	grid-row:1/3;
+	display:flex;
+	flex-direction:column;
+	align-items:center
+}
+.nft>img{
+	width:90%;
+	object-fit:contain
+}
+.nft__info{
+	width:100%;
+	background-color:#fff;
+	padding:27px;
+	margin-bottom:40px
+}
+.nft__info-person{
+	display:flex;
+	align-items:center;
+	text-align:center;
+	position:relative;
+	margin-bottom:40px
+}
+.nft__info-person>img{
+	margin-right:15px
+}
+.nft__info-person .nft__info-person_media{
+	margin-right:auto
+}
+.nft__info-person p:first-child{
+	color:#8e8e8e;
+	font-size:1.4rem;
+	font-weight:400;
+	margin-bottom:4px
+}
+.nft__info-person p:last-child{
+	color:#2e2f38;
+	font-size:1.4rem;
+	font-weight:600
+}
+.nft__info-person:after{
+	position:absolute;
+	content:"";
+	width:420px;
+	height:2px;
+	bottom:-15px;
+	left:0;
+	right:0;
+	margin:0 auto;
+	background-color:#2e2f38
+}
+.nft__links{
+	display:flex;
+	align-items:center;
+	justify-content:space-between
+}
+.nft__links .bid{
+	padding:10px 65px;
+	background-color:#fa504d;
+	color:#fff;
+	font-size:1.5rem;
+	text-decoration:none;
+	font-weight:600
+}
+.nft__links .view{
+	font-weight:600;
+	font-size:1.5rem;
+	color:#fa504d;
+	text-decoration:none;
+	padding:10px 40px
+}
+.services{
+	display:flex;
+	width:100%;
+	justify-content:space-between;
+	align-items:center
+}
+.services .services__item{
+	display:flex;
+	align-items:center
+}
+.services p:first-child{
+	font-size:2rem;
+	color:#fa504d;
+	font-weight:600;
+	margin-right:8px
+}
+.services p:last-child{
+	font-size:1.6rem;
+	color:#fff;
+	font-weight:400
+}
+body{
+	overflow-x:hidden;
+	font-size:16px
+}
+img{
+	max-width:100%
+}
+h1{
+	color:green
+}
