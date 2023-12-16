@@ -159,6 +159,7 @@ main{
 	display:flex;
 	justify-content:space-between;
 	align-items:flex-start;
+	margin-top: 40px;
 }
 .benefits__container .benefits-item{
 	width:32%;
