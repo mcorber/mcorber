@@ -81,9 +81,7 @@ nav li:first-child a:after{
 	padding-left:130px;
 	padding-right:115px;
 	max-width:1440px;
-	margin:0 auto;
-	overflow-y: hidden;
-	overflow-x:hidden;
+	margin:0 auto
 }
 .page:after{
 	position:absolute;
