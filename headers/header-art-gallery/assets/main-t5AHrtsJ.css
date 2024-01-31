@@ -138,7 +138,7 @@
       padding: 20px;
       background-color: #d5966c;
       width: 55px;
-      height: 71px;
+      height: 77px;
       display: inline-block;
       background-position: center;
       background-repeat: no-repeat;
@@ -465,7 +465,7 @@
       width: 100%;
     }
     .page main section.introduction div.button span {
-      height: 71px;
+      height: 77px;
     }
     .page main .introduction:after {
       content: "";
