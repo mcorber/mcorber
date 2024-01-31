@@ -33,7 +33,7 @@
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAaCAYAAACO5M0mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABRSURBVHgB7ZLBDQAgCAOJEzgCIzgCG+qGjoKQ+PBHTfRHk/4utBCITKpaKZJBzTxReJg7AtY9VRBYssL/CoVeyGM9PoLiZeDzZOQJ8c2XcMQsopbW/1NTI50AAAAASUVORK5CYII=);
   }
   .button:hover {
-    width: 50%;
+    
     display: flex;
     align-items: center;
   }
@@ -115,7 +115,7 @@
       padding: 15px 44px;
     }
     .introduction .button span {
-      height: 52px;
+      height: 57px;
     }
     .introduction .button:hover .button-1-mobile {
       font-size: 1.8rem;
@@ -365,7 +365,7 @@
       width: 50%;
     }
     main .introduction .button span {
-      height: 52px;
+      height: 57px;
     }
     main .gallery {
       margin-top: 220px;
