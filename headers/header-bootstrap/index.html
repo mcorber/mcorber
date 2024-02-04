@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite Sass Base Project</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <style>
+    body {
+      max-width: 1400px;
+      margin: 0 auto !important;
+    }
+
+    * {
+      max-width: 1400px !important;
+    }
+
+    nav {
+      margin-bottom: 500px;
+    }
+
+    div#paisa {
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+      display: grid;
+      place-items: center;
+    }
+
+    ul#menuDesktop {
+      display: none !important;
+    }
+
+    img#imgDesktop {
+      display: none;
+    }
+
+    @media screen and (min-width: 1000px) {
+      nav#nav {
+        padding-left: 70px !important;
+        padding-right: 70px !important;
+      }
+
+      button#menuMobile {
+        display: none;
+      }
+
+      ul#menuDesktop {
+        display: flex !important;
+      }
+
+      nav ul {
+        width: 50%;
+      }
+
+      img#imgDesktop {
+        display: block;
+        width: 40%;
+      }
+
+      div#hero, div#articles, div#footer {
+        padding-left: 70px !important;
+        padding-right: 70px !important;
+      }
+
+      div#hero {
+        margin-top: 70px;
+        padding-top: 170px;
+        display: flex;
+        align-items: center;
+      }
+
+      div#articles {
+        flex-direction: row !important;
+        align-items: center;
+        justify-content: space-between !important;
+      }
+
+      div#footer {
+        flex-direction: row !important;
+        align-items: center;
+        position: relative !important;
+        justify-content: space-between !important;
+        height: 500px !important;
+      }
+
+      div#footer div {
+        margin: 0 !important;
+      }
+
+      #copy {
+        position: absolute;
+        bottom: 30px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        text-align: center;
+      }
+    }
+  </style>
+  <script type="module" crossorigin src="./assets/index-2gZaGlGI.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index--M1qirE8.css">
+</head>
+<body>
+
+<nav class="navbar fixed-top mb-5 bg-light d-flex flex-row px-3 py-3" id="nav">
+  <div class="container-fluid d-flex flex-row">
+    <a class="navbar-brand text-primary fs-4 fw-semibold" href="#">SB UI Kit Pro</a>
+    <button class="navbar-toggler" type="button" data-toggle="offcanvas" data-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation" id="menuMobile">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <ul class="navbar-nav d-flex flex-row justify-content-between" id="menuDesktop">
+      <li class="nav-item">
+        <a class="nav-link " aria-current="page" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Landings</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pages</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link s" >Documentation</a>
+      </li>
+      <button class="btn btn-primary">Buy Now</button>
+    </ul>
+  </div>
+</nav>
+
+<div class="container-fluid pt-5 pb-5 bg-light px-4" id="hero">
+  <div>
+    <h1 class="mt-5 text-start fw-bold">Build your next Peoject faster</h1>
+    <p class="text-body-tertiary">Welcome to SB UI Kit Pro, a toolkit for building beautiful web interfaces, created by the development team at Start Bootstrao</p>
+    <div class="d-flex gap-3">
+      <button class="btn btn-primary ">Get Started</button>
+      <button class="btn btn-light text-primary">Learn More</button>
+    </div>
+  </div>
+  <img src="./assets/programming-jl5Ggwv0.svg" alt="" id="imgDesktop">
+</div>
+
+<div class="container-fluid d-flex flex-column align-items-center text-center mt-5 pt-4 gap-4 px-4" id="articles">
+  <div class="d-flex flex-column align-items-center text-center gap-3">
+    <div class="rounded-circle bg-primary align-self-center" id="paisa">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB6UlEQVR4nO2Wvy8EQRTHVyIEhUQiIQpBohVRKE4jrlDSOQ2lRKHwJ+jcnQqtyjWupBFxrULBHyBB59D5URAf2eRJ3q3d2dm9dVHMN5liZ95788lOvm/G85ycnJycrAW0AzNA3nLMAr1eqwTsk1y3wGirAGuk0z0w1krAK8sjLinIu8z/JNAJrAPTAcBaTN4gsAEMAVsByBGJmZbanc0AVqTwY0LAU4k7km8NWZW5J/mupIXbVEWPbQGBceBL4rbV/IXOBU5U/c2kcHPAh3JhfwLAosT4kONqviEX6ANuZO4TmLeFG/aPVBLfgKmoTYICOoAHiTkPrP3KBSaAF5l/jnU60AVcql+/EreJFlBQuUs2uYGca6CnoWiEKXyVQtbjAGuy/hR0pykXKKt9q0BbWPFFFXTmX2tJAGk0RzFhbrvs+aOFMMCFJgGLYebIDFACD1RQ2XYTDOawBNxR+x6GwkWYZNUSsBBlDovcZZXrX6HdkYCqzdQl4d2mzWAwh0WbeVVtZjTzRg2MmcyReaOOuOpODIDbJnMYANNfdSF9sW4ArMrcaUytIOBjU48F9dxaAyYNgEPytBpICDgptdM/tzJ4sObVuAoz2H958mv9KeAezWv3LwH9KymX4njzMnJhV6iTk5OTkxepb4OyLKeCuwMQAAAAAElFTkSuQmCC" alt="">
+    </div>
+    <h4>Built for developers</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque provident eligendi.</p>
+  </div>
+  <div class="d-flex flex-column align-items-center text-center gap-3">
+    <div class="rounded-circle bg-primary" id="paisa">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAACjElEQVR4nO2YPWsUURSG10TFgGAsbBVUtLEQUwiKEsLkN2iKhG38aARlCSFiYSUrWkkqiSwsEpA0KqJiINukVAiIYFyCCVqIZP2IRlGJj1z3HTJexzhzZ3YnhLxw2JnD3DPPnnvOmdnN5dbUIAFdwEAM69G6AQfrcgEcB6aBx9Q1BryzfEFVtM5F4y6AFeAi0GkihPlSBKy4Asa+CX/qBvBAx6+BEvADKFq74ATYAXgxrMMCHAZaBWl0FdgJLAJ5YGsA0gmwx7FJjBaADUAfSzqo61AWdwGHs9zi4UAGZ4B1ytjPtDKYZg3OAUMBfyo1mAZgVDkDvtHcM/Y9yk1YqjF/3bxs2rK3SQFvAi2B81MxAF8G1pnRUgqJn08KeB7YCFSBAnBIwWrAoIEg4wy2A/sUYBRYDxwHtgNtwA4LMqwGzRc5KRu0fKWkgGZLZxVgUZBmIJ9WFo8Ce7ME9Lu4FtIgNWXyhOMWz4eVR1zAfmC3jtv0VHivgNfk++zSJFb2nAFbgAvAJHBP9XhE2z2jp0Q/cAf4lEUGz1hBXgGbgIc6N69d+9XplyLUoG9zflaTAt7lbx0Arli+TsE2HfCydbMvesDf0vl94CywbRnAqHIC3AI8UoAPwDHNPlNvH4HNqslzwIssALs1nNvVEHuAJwp4XV28YN+kmYBlDerbwATwLRDwqQCHUgIsxwZc06oW9abwmmytcQB7ab5642Tvuf/A1ztfXtZIX9WMtTjZ+6r/Y8znM1kjff/PorI39ftSGNH8m9XPRN9XTGgjilVU7ImAb2rZWrRqr6BhPaki9n1Jm6GgWJ5ilwO+f2cxUHtZqxqpFlecqL/Sj60Q6wsD9FJogGJK5mWyS7nVqF/5zhMC5JrrGwAAAABJRU5ErkJggg==" alt="">
+    </div>
+    <h4>Modern responsive design</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque provident eligendi.</p>
+  </div>
+  <div class="d-flex flex-column align-items-center text-center gap-3">
+    <div class="rounded-circle bg-primary" id="paisa">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAADNElEQVR4nNWY20tUURTGp6QyyyxCSUgCE8rqKXtJiOwilQgGEfgPaKSQBUkgQSZE0UNEQRT01MVg3qzowZCgF7MigsCKEMIKCu0iXcHyFxu/oe1pxnP2mXMmWrBgz75+a39r1lr7JBL/mwAFQHmEWhoVsBLgBvCT6GUYqM8W4E3gC9AJNEeorcB94DtQERbcPN1cp37nA4si0CLtt0Q3uT8swDJt0CywYxHS26QzxoFjUQBMWdudJbV7tM/RuAC2WuOFDrTmac2MnAAEko6UvgMqtfYTcEDtEaA9UoDAArWvA4cC6pih1wpded52lAAXq93msFcxMBOYD1QDWx10HTArVoBGgB3Ae8LJc2BVIsYbLAI+AA+AWqDKQXcBb4CBoADnAN+AUWDIR/vls5u0frPle1t8qK0xLqH57cAEsNAXoMbqFROTPnpBBjVovfGnUuBjQGqfKDQZDEbKAgF0FaYC3K72Pp8bPKN5JU4ATVgAeoCHAbRPAd0GWKf2eh+jzFnobCeA5spPB6A3CVxUkZE7gBFQXBc7QCX9fovKAeCwtbZZ471pKDb/XiOXgBPTqFmLcrkTxXOV5J8Bt6WPNV4hSscVXLs13waYr8P9qvQfwFnL4MAA/wrUwE71rZXFpAoCL8UhXSR3AJl8gHX40JvSvWEAzga+ejLJW+AXsNQkdr1jRpXaijwAV2o8iLzWfs5/km3AVSucXAMarbW1wBXgnAzKHcUhD2iwASo3p2rFJmOE+o37tKnf5N/VrgBHAhQIQ2mKBZviFXIHW47oTFME2zIalGKX7JH0KRamBGrghXEXtZ+adc6BOiCNjQJ00gTnTBQDG9TukxGfgfOaZx7zr9T/SDddmAlgoSZ0BAR4WUXpMLB8GoCm9D9lZaFb5nuN5m0E7qr/HtCS0Qc1cEdleguwO4TWeAEGMTaN8RkBLlOeDSsTejClAA5Y6dFFB9MC9PhjVQgt99zgYMA60qsvpwWYreBDsYrgP++NoBTnEGCvxo//K4DVOqAhw3gqs1RmGO9SeVYQF8B8ZRYT4w46fhHrUnHSEwu4lABrFIhdZVyPtOJELoTJetHlg3s8tMYpvwELL3TEhdc/+QAAAABJRU5ErkJggg==" alt="">
+    </div>
+    <h4>Complete documentation</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque provident eligendi.</p>
+  </div>
+</div>
+
+<div class="container-fluid d-flex flex-column align-items-start gap-2 text-start mt-5 pt-5 px-5 bg-dark" id="footer">
+  <div>
+    <h4 class="text-light">SB UI Kit Pro</h4>
+    <p class="text-light">Design made easy</p>
+    <div id="social-media" class="d-flex gap-2">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB+0lEQVR4nM2XzS5DQRSASxRbJEobLMWmGzvaWGjseASphZ99Q7yAWqDiHSiJdyC2jVqhGgl2JNhj88mJI7m57t/cDjHJJM3MmfPd8zNzThOJ/zqAASALjEecIjsQF9YHbAIPxB/3QBnojQqdAV6BGjAPDAEdBh/doWfk7DnwAhSiQN+AEtAWFRagrw1YVZ2FIPeKpaVWgR6619Tyn27XmNYsWToGzH3rUsvrEnMvYUmk+VahqutJE2zWsVaUhHMLplRwKILSDLAMVHTK74xL5hh4BEYdayPK6HcKyt0jKHuBLmAP+ACugH2d17q2KzIB55PKyDoX5eITcKgbOAMawITHfg5oAqchcBnjJuA9hfYEyPQqvGIFzFdMxZWTfgodsnngHUjbAK8Al2FQh7zEfMkGuAIcGIAPgW0b4B2gagA+ArZsufrKANyw5eqMJlcuAnRKk2uwZbAMfRyaQbVVi8ytX3zjgrv0cRB43sdSgZ4AnSbgbMQns6KulDhWdd7o2nYINOn1ZJoUiTSw6CgSi34xdZ0b+VEkdOPeVln0AReBO6+NsvZILTcCHrrbgQtgw++Rl/Zk9RfA68Czb5GRhkwbszVLLVC7Qt+A6TDhglpe17gMS0YawJKaSAvq3udQqMvtZU24uONOYhpUwxMhHyFXzfQvTCoW7C/GJwYBHfj2F59tAAAAAElFTkSuQmCC" alt="">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABkklEQVR4nNWWvUrEQBDHg+cXeoq1cIoIngpWIoKN+AJiZaMWClpYiAHBSrD3Cewt5LQQrG0EhQPFN1As9A6/3+AngzGEuNnbuUsO/EMgkJn57ezOzsTz/pOAbmAUKMp7lqAeYAU4Bb74q0/gBFgW2zSAbcAGUMVdb8Au0FEvdAC4o37dAgUtdEqZZZIqwKQm0zSgUXihFrRdub0XwDowB8wC88C+we5G6sUG3lJA/YQYMwn2m7Yr8+IIPbcsPglcBfImB7mnrlqI+Y4DB8AhcGbxWzKBpTm4KiwWIAc8OvqVTGDpPq4K2yQwpvB7N52vRmFXAqaVvvkouNhE8IgGfJlUxYYjW9SA+1IE79WI1aspLg34yBLnQ3udHoJR9/vkIn79sW/32uu0RvbFtWoCdwLPGYIrQFfS+exkCPZthdEKXGcALlvHYhBoCHhNESyxBq3QWP99SgEs5zrhBI0EHLZsuwv4SnZPBY2NPN9Q7TawZLkNtHiNip9/MflROA4Cx8GysJIMerFtGOi5LarxzJqpb4ncz79asovyAAAAAElFTkSuQmCC" alt="">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB1klEQVR4nO2WSytFURTHr2e5hAEzdyB8APkEkkfCWMlnYIR8As/CRAYoKRnwBTA2MPAIUyOPIq9SXvlp1Zbdts62z7nXzL/O4O77f5y9z1rrnFTqHwEA0kC9uUpSfwUgH+gBloErfkLWloBu4eYqtAM4JBwHQFs2gQXAGMkxKx5JQjfJHhuxjh6Ycgz2gIeAoAfDtTEeGirP1MarVC5QCgwDL1bI183I2pCpdrneHI/WkOp1C+na4dQCFdbvCllzONeOx773yE3LuHiO2yLAk+LT5RNIn7qQuy+PESqP5UbxWfSJtOHQF2e3xqdf8bmIIqcjdhuvF7/bUdt1iUaWuetiK26o5bet+NVpxAaFuJ1F8I7i16ARKxXiLVCcILQYuFP8yjVyHnCpkEcSBI8qPuc+waoieAcGQnrZDKBBo3Gx4hN2WcRHazwKjszIzCi6jPlPOFHo9AXLcZ8a4gnQBJxZ4nutMoEaUw9ROBbv346rFfgwggWg0QQK5j26iYhQ8Wrxhlomc9YOq4BqoFkqP+a0EswEhVqTZ90Id82Ry1uozKPpVULXknyFFAHT1rELegODRTMJFMYKtQG0W+/okODsPvaU/pRWa/Jw5HF05uzz9h+pHOETLY4vMPtsU6YAAAAASUVORK5CYII=" alt="">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABr0lEQVR4nO3Wu2sVQRSA8asQIijXiAHRxiaxUUEstBbBRvABguEaG/8D7QSxsrARC1HrYOMjYGMh+EgRtBCtTKWmUNBCLXygQtD8ZGAWFjN77856ryDka5Ydzs63M3PmzLRay/xvYBtO4youYhLtRNxKDBUvwxhrKFyL61i0lA/oxLg2juNuWRwa5rExU7oaz3Qn/NATLMT3I+UOpmLjq5yRxymty0+cwk4cKzp4WAr4iIM1pGvwI0P8GV/xHpuLTm4mpucaNnUR75PPG2wvd3KyIvAbrmBrQhyyNoeFJQPBKD71+HAOF3AUO0K2Zoq/VE3dRMWW6BcvU9JpnIvPQTGbEhfbaZBMpcT7/4F4MiVegfsDlC5iQ1VyjdYof015lJSW5KtwFu/6LD7US9yJp8dcH7fW87CUvcTrahSSXA53lZbke/C9T9JbtaQF2BUS4i+lLzDSagJ241KD9X6L8abSNs5knrnFZWJLrmw9DuByPLhzuRPqQV3ZXsw0GFmZ18mSWEM+FPfwPfyqKQvr/hgnwi01W/onoaaGSoPzuIEHeBrvZbdje6ey9i7TSvMbj2+jNVPQnz4AAAAASUVORK5CYII=" alt="">
+    </div>
+  </div>
+
+  <div class="mt-5 mb-3">
+    <h3 class="fw-semibold text-light mb-3">PRODUCT</h3>
+    <ul class="nav flex-column">
+      <li class="nav-item"><a class="nav-link disabled text-light" href="">Landing</a></li>
+      <li class="nav-item"><a class="nav-link disabled text-light" href="">Pages</a></li>
+      <li class="nav-item"><a class="nav-link disabled text-light" href="">Sections</a></li>
+      <li class="nav-item"><a class="nav-link disabled text-light" href="">Documentation</a></li>
+      <li class="nav-item"><a class="nav-link disabled text-light" href="">Changelog</a></li>
+    </ul>
+  </div>
+
+  <div class="mt-5 mb-3">
+    <h3 class="fw-semibold text-light mb-3">TECHNICAL</h3>
+    <ul class="nav flex-column">
+      <li class="nav-item"><a class="nav-link disabled text-light" href="">Documentation</a></li>
+      <li class="nav-item"><a class="nav-link disabled text-light" href="">Changelog</a></li>
+      <li class="nav-item"><a class="nav-link disabled text-light" href="">Theme Customer</a></li>
+      <li class="nav-item"><a class="nav-link disabled text-light" href="">UI Kit</a></li>
+    </ul>
+  </div>
+
+  <div class="mt-5 mb-3">
+    <h3 class="fw-semibold text-light mb-3">INCLUDES</h3>
+    <ul class="nav flex-column">
+      <li class="nav-item"><a class="nav-link disabled text-light" href="">Utilities</a></li>
+      <li class="nav-item"><a class="nav-link disabled text-light" href="">Components</a></li>
+      <li class="nav-item"><a class="nav-link disabled text-light" href="">Layouts</a></li>
+      <li class="nav-item"><a class="nav-link disabled text-light" href="">Code Samples</a></li>
+      <li class="nav-item"><a class="nav-link disabled text-light" href="">Products</a></li>
+      <li class="nav-item"><a class="nav-link disabled text-light" href="">Affilities</a></li>
+      <li class="nav-item"><a class="nav-link disabled text-light" href="">Updates</a></li>
+    </ul>
+  </div>
+
+  <div class="mt-5 mb-5">
+    <h3 class="fw-semibold text-light mb-3">LEGAL</h3>
+    <ul class="nav flex-column">
+      <li class="nav-item"><a class="nav-link disabled text-light" href="">Privacy Policy</a></li>
+      <li class="nav-item"><a class="nav-link disabled text-light" href="">Terms and Conditions</a></li>
+      <li class="nav-item"><a class="nav-link disabled text-light" href="">License</a></li>
+    </ul>
+  </div>
+
+  <div class="mt-5 mb-3" id="copy">
+    <ul class="nav flex-column">
+      <li class="nav-item"><a class="nav-link disabled text-light" href="">Copyright - Your website 2023</a></li>
+      <li class="nav-item"><a class="nav-link disabled text-light" href="">Privacy Policy - Terms and Conditions</a></li>
+    </ul>
+  </div>
+</div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</html>
