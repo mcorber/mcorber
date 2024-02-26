@@ -19,7 +19,7 @@ const specialChars = "£$&()*+[]@#^-_!?";
 
 
 
-// Initializing Character length value
+// Aqui inicializamos el valor del slider
 sliderValue.textContent = slider.value;
 
 
@@ -62,25 +62,6 @@ const generatePassword = () => {
   return password;
 }
 
-const estimateStrength = (password) => {
-  let score = zxcvbn(password).score
-
-  if (score <=1 ) {
-    passwordState.textContent = 'too weak!'
-    passwordStrength.className = 'too-weak'
-  } else if (score === 2) {
-    passwordState.textContent = 'weak'
-    passwordStrength.className = 'weak'
-  } else if (score === 3){
-    passwordState.textContent = 'medium'
-    passwordStrength.className = 'medium'
-  } else {
-    passwordState.textContent = 'strong'
-    passwordStrength.className = 'strong'
-  }
-
-
-}
 
 
 const copyToClipboard = async () => {
